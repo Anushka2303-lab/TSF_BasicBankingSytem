@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Transfer Money</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="customers.html">View All Customers</a>
+        </nav>
+    </header>
+    <main>
+        <form id="transfer-form">
+            <label for="from-customer">From:</label>
+            <select id="from-customer" disabled>
+                <!-- From customer will be loaded here by script.js -->
+            </select>
+            <label for="to-customer">To:</label>
+            <select id="to-customer">
+                <!-- To customers will be loaded here by script.js -->
+            </select>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" min="0" required>
+            <button type="submit">Transfer</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
